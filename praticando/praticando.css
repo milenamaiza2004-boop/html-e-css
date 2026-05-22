@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body{
+    background-color:#F5C400;
+
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#principal{
+    color: #A88700;
+    text-align: center;
+}
+
+#secundario{
+    color: #645000;
+
+}
+
+.descriçao{
+    color: #866B00;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    color: #645000;
+}
+
+div:hover{
+    color: rgb(4, 4, 4);
+
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+background-color:#645000;
+color: rgb(1, 1, 1);
+}
