@@ -73,16 +73,27 @@ section.normal{
 section.imagem{
     background-color:rgb(27, 26, 26);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.632);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     display: inline-block;
     padding:5px;
-    background-color: rgba(5, 5, 5, 0.485);
+    background-color: rgba(5, 5, 5, 0.567);
+    text-shadow: 1px 1px 0px black;
 }
 
 section#img01{
-    background-image: url('/desafios/d04/imagens/background001.jpg');
+    background-image: url('../d04/imagens/background001.jpg');
+    background-position: right center;
+    
+}
+
+section#img02{
+    background-image: url('../d04/imagens/background002.jpg');
+    background-position: right center;
 }
 
 
