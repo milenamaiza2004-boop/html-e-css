@@ -18,6 +18,13 @@
             border: 1px solid black;
             padding: 10px;
         }
+
+        caption{
+            font-size:1.5em;
+            font-weight:bold;
+            padding:5px;
+            background-color: rgba(128, 126, 126, 0.793);
+        }
         
         thead, tfoot{
             background-color:black;
@@ -38,10 +45,11 @@
 -->
 
 <table>
+    <caption>População dos Estados Brasileiros<caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width:50px;">População</th>
         </tr>
     </thead>
     <tbody>
@@ -155,7 +163,7 @@
         </tr>
     </tbody>
     <tfoot>
-        <th>Total</th>
+        <th scope="row">Total</th>
         <td><strong>210.890.704</strong></td>
     </tfoot>
 </table>
