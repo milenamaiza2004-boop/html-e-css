@@ -12,6 +12,7 @@
         table{
             width:500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -20,9 +21,9 @@
         }
 
         caption{
-            font-size:1.5em;
+            font-size: 1.5em;
             font-weight:bold;
-            padding:5px;
+            padding-top: 10px;
             background-color: rgba(128, 126, 126, 0.793);
         }
         
@@ -30,12 +31,34 @@
             background-color:black;
             color: white;
         }
+
+        thead > tr > th{
+            position:sticky;
+            top: -1px;
+            background-color: black;
+        }
+
+        tbody > tr:nth-child(even){ /*seleciona as linhas pares do corpo da tabela*/ /*(2n-1)*/
+            background-color: white;
+        
+        }
+
+        tbody > tr:nth-child(odd){ /*seleciona as linhas ímpares do corpo da tabela*/ /*(2n)*/
+            background-color:rgb(192, 182, 182);
+        }
+
+        td.num{
+            text-align:right;
+
+        }
+
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas</h1>
     <!--Anatomia para tabelas (complexas)
     Table
+     Caption
          THeader
             Tr, Td, Th (Tr = table row, Td = table data, Th = table header)
          TBody
