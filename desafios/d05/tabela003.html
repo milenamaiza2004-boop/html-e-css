@@ -11,12 +11,22 @@
 
         table{
             border-collapse: collapse;
-            width:400px;
+            width: 500px;
         }
 
         th, td{
             border:1px solid black;
-            padding: 10px;
+            padding: 5px;
+        }
+
+        th{
+            background-color:rgb(119, 123, 125);
+            color:white;
+        }
+
+        tfoot{
+            background-color:rgb(119, 123, 125);
+            color:white;
         }
     </style>
 
@@ -25,14 +35,21 @@
     <table>
         <thead>
             <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th>Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="col">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
-
+        
+        
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" style="background-color: white; color: black;" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>8,5</td>
                 <td>7,0</td>
@@ -63,11 +80,12 @@
 
             <tr>
                 <th colspan="4" style="text-align: left;">Média de Exatas</th>
-                <td>7,6</td>
+                <td style="background-color:rgb(119, 123, 125);
+            color:white;">7,6</td>
             </tr>
 
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2"  style="background-color: white; color: black;" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td>7,0</td>
                 <td>8,0</td>
@@ -80,7 +98,7 @@
                 <td>7,0</td>
                 <td>7,5</td>
             </tr>
-        </thead>
+        </tbody>
 
         <tfoot>
             <th colspan="4" style="text-align: left;">Média de Humanas</th>
