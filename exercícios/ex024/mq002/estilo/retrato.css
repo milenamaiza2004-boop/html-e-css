@@ -4,9 +4,6 @@
 
 body{
     background-image: url(../imagens/cev-portrait.jpg);
-    background-position: center center;
-    background-size: auto 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
+    background-position: left bottom;
+    background-size: cover;
 }
