@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Curiosidades</a></li>
+                <li><a href="#">Esporte</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestias modi reprehenderit minus consequuntur cum corrupti vel unde. Eveniet rem corrupti omnis delectus? Veniam ea neque error suscipit tempora optio?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum debitis provident eos, placeat blanditiis minima totam, doloribus id exercitationem assumenda tempore, quibusdam a mollitia harum quasi accusamus at beatae expedita.lorem</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos est corrupti, minima, totam quo accusamus vero sint adipisci sequi nulla error dolorum quasi expedita voluptate commodi, quas aut perferendis.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati quibusdam quod, repellendus beatae dolor sed quas dolorem eius, exercitationem minus molestiae. Impedit ipsa deleniti esse nostrum odio aliquid amet.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum tempore quisquam nobis blanditiis eaque quasi? Dolorum aut, nihil recusandae eaque cupiditate deleniti dolor. Nam aut quasi repudiandae autem deserunt repellat.
+            </p>
+
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+           if (itens.style.display == "block") {
+            itens.style.display = "none"
+           } else {
+            itens.style.display = "block"
+           }
+        }
+    </script>
+</body>
+</html>
